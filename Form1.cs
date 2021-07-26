@@ -16,5 +16,9 @@ namespace i18n
         {
             InitializeComponent();
         }
+
+        private void btnChangeLang_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

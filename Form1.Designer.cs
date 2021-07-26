@@ -29,54 +29,46 @@ namespace i18n
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnzh_TW = new System.Windows.Forms.Button();
-            this.btn = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnChangeLang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnzh_TW
+            // btnSave
             // 
-            this.btnzh_TW.Location = new System.Drawing.Point(87, 43);
-            this.btnzh_TW.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnzh_TW.Name = "btnzh_TW";
-            this.btnzh_TW.Size = new System.Drawing.Size(125, 36);
-            this.btnzh_TW.TabIndex = 0;
-            this.btnzh_TW.Text = "中文";
-            this.btnzh_TW.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.Name = "btnSave";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // btn
+            // btnCancel
             // 
-            this.btn.Location = new System.Drawing.Point(87, 110);
-            this.btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(125, 36);
-            this.btn.TabIndex = 1;
-            this.btn.Text = "English";
-            this.btn.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("新細明體", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(341, 59);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "測試";
+            // 
+            // btnChangeLang
+            // 
+            resources.ApplyResources(this.btnChangeLang, "btnChangeLang");
+            this.btnChangeLang.Name = "btnChangeLang";
+            this.btnChangeLang.UseVisualStyleBackColor = true;
+            this.btnChangeLang.Click += new System.EventHandler(this.btnChangeLang_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 168);
+            this.Controls.Add(this.btnChangeLang);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn);
-            this.Controls.Add(this.btnzh_TW);
-            this.Font = new System.Drawing.Font("新細明體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,9 +76,10 @@ namespace i18n
 
         #endregion
 
-        private System.Windows.Forms.Button btnzh_TW;
-        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnChangeLang;
     }
 }
 

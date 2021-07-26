@@ -130,4 +130,10 @@
   <data name="btnCancel.Text" xml:space="preserve">
     <value>取消</value>
   </data>
+  <data name="btnChangeLang.Text" xml:space="preserve">
+    <value>切換語系</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>測試</value>
+  </data>
 </root>
